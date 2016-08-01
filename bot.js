@@ -25,10 +25,10 @@ function respond() {
   }
 }
 
-function postMessage() {
-  var botResponse, options, body, botReq;
+function postMessage(response) {
+  var botResponse,options, body, botReq;
 
-  botResponse = responce
+  botResponse = response
 
   options = {
     hostname: 'api.groupme.com',
@@ -58,6 +58,10 @@ function postMessage() {
     console.log('timeout posting message '  + JSON.stringify(err));
   });
   botReq.end(JSON.stringify(body));
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
 }
 
 
