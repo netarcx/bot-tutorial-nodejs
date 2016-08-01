@@ -6,12 +6,19 @@ var botID = process.env.BOT_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/GreenBot say hi$/;
+      botRegexEV = /^\/lastevent/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
-  } else {
+  }
+    else if(request.text && botRegexEV.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("The Green Machine last played the Gitch and WON! ");
+    this.res.end();
+  }
+   else {
     console.log("don't care");
     this.res.writeHead(200);
     this.res.end();
