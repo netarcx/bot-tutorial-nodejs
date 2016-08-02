@@ -5,12 +5,12 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/GreenBot say hi/;
+      botRegex = /^\/GreenBotapi/;
       botRegexEV = /^\/lastevent/;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("The Green Machine");
+    postMessage(tba.getTeamsAtEvent('casb', function(err, teamsInfo));
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
