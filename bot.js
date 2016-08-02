@@ -1,7 +1,6 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 
-
 var botID = process.env.BOT_ID;
 
 function respond() {
@@ -11,7 +10,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(tba.getTeamsAtEvent('casb', function(err, teamsInfo));
+    postMessage("The Green Machine");
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
