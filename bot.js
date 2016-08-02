@@ -8,8 +8,8 @@ var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2
 console.log(tba.getTeamsAtEvent('casb', function(err, teamsInfo) {
   // teamsInfo is a list of teams at the Inland Empire Regional for the current year
   //...
-});
-)
+})
+);
 
 var botID = process.env.BOT_ID;
 
