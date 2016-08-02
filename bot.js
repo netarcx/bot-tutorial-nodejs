@@ -4,7 +4,6 @@ var blue = require('thebluealliance')
 
 var botID = process.env.BOT_ID;
 
-console.log(tba.getTeamsAtEvent('casb', function(err, teamsInfo));
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
