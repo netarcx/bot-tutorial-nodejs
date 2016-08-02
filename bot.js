@@ -7,7 +7,7 @@ var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2
 
 //tba.getAwardHistoryForTeam(1816) 
 
-tba.getAwardHistoryForTeam(frc_id, callback(award_history))
+tba.getAwardHistoryForTeam(1816, callback(award_history))
 
 var botID = process.env.BOT_ID;
 
