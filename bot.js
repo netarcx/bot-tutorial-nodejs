@@ -10,7 +10,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("The Green Machine");
+    postMessage(tba.getYearsParticipatedByTeam(1816, callback(err, list_of_years)));
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
