@@ -5,7 +5,7 @@ var blue = require('thebluealliance')
 var initTBA = require('thebluealliance');
 var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2 API','1.1.1');
 
-console.log(tba.getTeamsAtEvent(1816));
+console.log(tba.getTeamById(1816));
 
 tba.getTeamsAtEvent('arc', (new Date()).getFullYear());
 
