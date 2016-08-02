@@ -6,7 +6,7 @@ var initTBA = require('thebluealliance');
 var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2 API','1.1.1');
 
 
-tba.getTeamById(1816, callback(err, team_info))
+tba.getTeamById(1816, callback( team_info))
 
 
 
