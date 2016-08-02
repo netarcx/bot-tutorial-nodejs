@@ -22,7 +22,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("api trial");
+    postMessage(tba.getTeamsAtEvent('arc', (new Date()).getFullYear()););
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
