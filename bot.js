@@ -10,7 +10,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(tba.getTeamsAtEvent('casb', function(err, teamsInfo));
+    postMessage("api trial");
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
