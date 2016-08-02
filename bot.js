@@ -7,7 +7,7 @@ var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2
 
 console.log(tba.getTeamById(1816));
 
-tba.getTeamsAtEvent('arc', (new Date()).getFullYear());
+//tba.getTeamsAtEvent('arc', (new Date()).getFullYear());
 
 var botID = process.env.BOT_ID;
 
