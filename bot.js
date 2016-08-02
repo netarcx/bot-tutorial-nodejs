@@ -10,7 +10,7 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(tba.getYearsParticipatedByTeam(1816, callback(err, list_of_years)));
+    postMessage(tba.getTeamsAtEvent('casb', function(err, teamsInfo));
     this.res.end();
   }
     else if(request.text && botRegexEV.test(request.text)) {
