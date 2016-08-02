@@ -2,6 +2,9 @@ var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
 var blue = require('thebluealliance')
 
+var initTBA = require('thebluealliance');
+var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2 API','1.1.1');
+
 var botID = process.env.BOT_ID;
 
 
