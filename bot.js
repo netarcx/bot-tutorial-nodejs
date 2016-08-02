@@ -5,7 +5,7 @@ var blue = require('thebluealliance')
 var initTBA = require('thebluealliance');
 var tba = initTBA('node-thebluealliance','Node.js wrapper library for the TBA v2 API','1.1.1');
 
-console.log(tba.getTeamsAtEvent('arc', callback););
+console.log(tba.getTeamsAtEvent('arc', callback));
 
 
 var botID = process.env.BOT_ID;
